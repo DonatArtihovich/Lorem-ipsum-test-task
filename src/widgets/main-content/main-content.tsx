@@ -2,7 +2,7 @@ import cls from './main-content.module.scss'
 
 export function MainContent() {
     return (
-        <main className={cls.main}>
+        <section className={cls.main}>
             <div className={cls.mainWrapper}>
                 <div className={cls.textWrapper}>
                     <h1 className={cls.mainHeader}>
@@ -26,6 +26,6 @@ export function MainContent() {
 
                 </div>
             </div>
-        </main >
+        </section >
     )
 }
