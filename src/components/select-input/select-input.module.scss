@@ -6,4 +6,13 @@
     height: 48px;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.85);
+
+    option {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 189%;
+
+        color: white;
+    }
 }
