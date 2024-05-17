@@ -3,6 +3,7 @@ import cls from './order-content.module.scss'
 import { TextInput } from '@components/input'
 import { RangeInput } from '@components/range-input'
 import { FileInput } from '@components/file-input'
+import { Slider } from '@components/slider'
 
 export function OrderContent() {
     return (
@@ -29,6 +30,7 @@ export function OrderContent() {
                     <button type="submit" className={cls.sendButton}>отправить</button>
                 </form>
 
+                <Slider />
             </div>
         </section>
     )

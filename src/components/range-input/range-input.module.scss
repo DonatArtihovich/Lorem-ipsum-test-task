@@ -28,10 +28,11 @@
 
 .input {
     width: 771px;
-
-    &::-webkit-slider-thumb {
-        border: 2px solid var(--color-blue);
-    }
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 
     &::-webkit-slider-runnable-track {
         background: rgba(255, 255, 255, 0.7);
