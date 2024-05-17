@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 export function Header() {
     const width = useResize();
-    console.log(width)
     const [isMenuOpened, setIsMenuOpened] = useState<boolean>(width > 760);
 
     return (
