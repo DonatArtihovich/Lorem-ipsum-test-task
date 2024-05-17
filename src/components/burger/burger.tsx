@@ -1,6 +1,5 @@
 import classNames from '@utils/lib/class-name';
 import cls from './burger.module.scss'
-import { useState } from 'react';
 
 type BurgerProps = {
     isMenuOpened: boolean;
