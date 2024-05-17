@@ -1,4 +1,29 @@
+.selectWrapper {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+}
+
+.selectWrapper::after {
+    content: "";
+    width: 9px;
+    height: 6px;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    background-color: black;
+    grid-area: select;
+    justify-self: end;
+}
+
 .select {
+    // appearance: none;
+    outline: none;
     border: 1px solid #fff;
     border-radius: 3px;
     padding: 10px;
@@ -6,13 +31,23 @@
     height: 48px;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.85);
+    grid-area: select;
+
+    &::-ms-expand {
+        display: none;
+    }
 
     option {
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 18px;
         line-height: 189%;
-
+        background-color: black;
         color: white;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
     }
 }
