@@ -15,7 +15,7 @@ export function OrderContent() {
                     </article>
                     <p className={cls.warning}>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
                 </div>
-                <img className={cls.iconsImage} src="/images/icons.png" alt="" />
+                <img className={cls.iconsImage} src="/images/icons.svg" alt="" />
 
                 <form className={cls.form}>
                     <div className={cls.inputsWrapper}>
