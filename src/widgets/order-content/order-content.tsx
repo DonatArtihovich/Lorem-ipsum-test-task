@@ -61,7 +61,6 @@ export function OrderContent() {
                         <FileInput
                             ref={fileInput}
                             className={cls.fileInput}
-                            onChange={(e) => setFile(e.target.files?.[0])}
                         />
                     </div>
 
