@@ -1,0 +1,67 @@
+.burger {
+    width: 35px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.burgerLine {
+    width: 35px;
+    height: 2px;
+    background-color: gray;
+}
+
+.turned {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    animation: 0.3s turnBurger ease-in-out;
+    -webkit-animation: 0.3s turnBurger ease-in-out;
+}
+
+.unturned {
+    animation: 0.3s unturnBurger ease-in-out;
+    -webkit-animation: 0.3s unturnBurger ease-in-out;
+}
+
+@keyframes turnBurger {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+
+@keyframes unturnBurger {
+    from {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+}
