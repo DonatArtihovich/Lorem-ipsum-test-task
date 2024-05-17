@@ -64,28 +64,6 @@ export function Slider() {
         }, 350)
     }
 
-    const handleAnimationEnd = () => {
-        // if (isSwipedRight) {
-        //     setIsSwipedRight(false);
-
-        //     if (currentIndex < feedbacks.length - 1) {
-        //         setCurrentIndex(currentIndex + 1);
-        //     } else {
-        //         setCurrentIndex(0);
-        //     }
-        // }
-
-        // if (isSwipedLeft) {
-        //     setIsSwipedLeft(false);
-
-        //     if (currentIndex > 0) {
-        //         setCurrentIndex(currentIndex - 1);
-        //     } else {
-        //         setCurrentIndex(feedbacks.length - 1);
-        //     }
-        // }
-    }
-
     return (
         <div className={cls.slider}>
             <button
@@ -98,10 +76,9 @@ export function Slider() {
             <div className={cls.feedbacksListWrapper}>
                 <ul
                     className={classNames(cls.feedbacksList, isSwipedRight && cls.swipedRight, isSwipedLeft && cls.swipedLeft)}
-                    onAnimationEnd={handleAnimationEnd}
                 >
                     {feedbacks.slice(currentIndex, currentIndex + 5).concat(feedbacks.slice(0, 5)).slice(0, 5).map((feedback: Feedback) => (
-                        <div className={cls.feedbackCard}>
+                        <div className={cls.feedbackCard} key={feedback.author}>
                             <h3>{feedback.author}</h3>
                             <p>{feedback.feedback}</p>
                         </div>

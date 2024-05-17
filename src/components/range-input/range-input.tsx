@@ -1,13 +1,14 @@
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent } from 'react'
 import cls from './range-input.module.scss'
 import classNames from '@utils/lib/class-name';
 
 type RangeInputProps = {
     className?: string;
+    value: number;
+    setValue: (n: number) => void;
 };
 
-export function RangeInput({ className }: RangeInputProps) {
-    const [value, setValue] = useState<number>(100);
+export function RangeInput({ className, value, setValue }: RangeInputProps) {
 
     return (
         <div className={classNames(cls.wrapper, className)}>
