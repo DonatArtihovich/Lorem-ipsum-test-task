@@ -11,7 +11,7 @@ export function createPost(message: string) {
     };
 
 
-    axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${data.chat_id}&text=${data.text}`)
+    axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${data.chat_id}&text=${data.text}&parse_mode=HTML`)
     .then(() => {
         console.log('Сообщение отправлено успешно!');
     })
