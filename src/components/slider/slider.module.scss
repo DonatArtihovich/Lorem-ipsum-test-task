@@ -18,13 +18,13 @@
     gap: 20px;
 
     &.swipedLeft {
-        animation: 1s swipe-left ease-out;
-        -webkit-animation: 1s swipe-left ease-out;
+        animation: 0.4s swipe-left ease-out;
+        -webkit-animation: 0.4s swipe-left ease-out;
     }
 
     &.swipedRight {
-        animation: 1s swipe-right ease-out;
-        -webkit-animation: 1s swipe-right ease-out;
+        animation: 0.4s swipe-right ease-out;
+        -webkit-animation: 0.4s swipe-right ease-out;
     }
 }
 

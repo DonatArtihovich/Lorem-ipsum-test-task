@@ -39,32 +39,51 @@ export function Slider() {
 
     const swipeLeft = () => {
         setIsSwipedLeft(true);
-    }
-
-    const swipeRight = () => {
-        setIsSwipedRight(true);
-    }
-
-    const handleAnimationEnd = () => {
-        if (isSwipedRight) {
-            setIsSwipedRight(false);
-
-            if (currentIndex < feedbacks.length - 1) {
-                setCurrentIndex(currentIndex + 1);
-            } else {
-                setCurrentIndex(0);
-            }
-        }
-
-        if (isSwipedLeft) {
-            setIsSwipedLeft(false);
-
+        setTimeout(() => {
             if (currentIndex > 0) {
                 setCurrentIndex(currentIndex - 1);
             } else {
                 setCurrentIndex(feedbacks.length - 1);
             }
-        }
+
+            setIsSwipedLeft(false)
+        }, 350)
+    }
+
+    const swipeRight = () => {
+        setIsSwipedRight(true);
+        setTimeout(() => {
+            if (currentIndex < feedbacks.length - 1) {
+                setCurrentIndex(currentIndex + 1);
+            } else {
+                setCurrentIndex(0);
+            }
+
+            setIsSwipedRight(false)
+
+        }, 350)
+    }
+
+    const handleAnimationEnd = () => {
+        // if (isSwipedRight) {
+        //     setIsSwipedRight(false);
+
+        //     if (currentIndex < feedbacks.length - 1) {
+        //         setCurrentIndex(currentIndex + 1);
+        //     } else {
+        //         setCurrentIndex(0);
+        //     }
+        // }
+
+        // if (isSwipedLeft) {
+        //     setIsSwipedLeft(false);
+
+        //     if (currentIndex > 0) {
+        //         setCurrentIndex(currentIndex - 1);
+        //     } else {
+        //         setCurrentIndex(feedbacks.length - 1);
+        //     }
+        // }
     }
 
     return (
