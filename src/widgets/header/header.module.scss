@@ -27,7 +27,7 @@
     color: var(--color-blue);
 
     span:first-child {
-        color: white
+        color: white;
     }
 }
 
@@ -48,3 +48,15 @@
         }
     }
 }
+
+@media(max-width: 1200px) {
+    .headerNav {
+        gap: 30px;
+    }
+}
+
+// @media(max-width: 760px) {
+//     .headerNav {
+//         gap: 10px;
+//     }
+// }

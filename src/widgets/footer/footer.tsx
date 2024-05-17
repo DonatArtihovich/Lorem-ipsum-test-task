@@ -4,7 +4,7 @@ export function Footer() {
     return (
         <footer className={cls.footer}>
             <div className={cls.wrapper}>
-                <span className={cls.copyright}>© 2018 «LoremIpsum.net» Все права<br />защищены.</span>
+                <span className={cls.copyright}>© 2018 «LoremIpsum.net» Все права защищены.</span>
                 <span className={cls.divider} />
                 <div className={cls.walletsWrapper}>
                     <a className={cls.contactWrapper}>

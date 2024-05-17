@@ -2,6 +2,7 @@
     width: 771px;
     display: flex;
     flex-direction: column;
+    grid-column: 1 / 3;
 }
 
 .header {
@@ -41,5 +42,21 @@
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    .input,
+    .wrapper {
+        width: 45vw;
+    }
+}
+
+@media(max-width: 670px) {
+
+    .input,
+    .wrapper {
+        width: 70vw;
     }
 }

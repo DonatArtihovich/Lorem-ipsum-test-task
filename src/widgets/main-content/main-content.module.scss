@@ -83,3 +83,48 @@
     text-align: center;
     color: #2a2b30;
 }
+
+@media(max-width: 1200px) {
+    .mainHeader {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 670px) {
+    .mainHeader {
+        font-size: 35px;
+    }
+
+    .textWrapper {
+        gap: 40px;
+        margin-top: 0;
+    }
+
+    .main {
+        height: 700px;
+    }
+}
+
+@media (max-width: 550px) {
+    .mainHeader {
+        font-size: 30px;
+    }
+
+    .text,
+    .listItem {
+        font-size: 18px;
+    }
+
+    .textWrapper {
+        gap: 40px;
+        margin-top: 0;
+    }
+
+    .main {
+        height: 700px;
+    }
+
+    .buttonsWrapper {
+        justify-content: center;
+    }
+}

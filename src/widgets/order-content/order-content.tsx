@@ -42,16 +42,19 @@ export function OrderContent() {
                         <SelectInput
                             value={selectedValue}
                             setValue={setSelectedValue}
+                            className={cls.selectInput}
                         />
                         <TextInput
                             placeholder="Ваш email"
                             value={email}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+                            className={cls.textInput}
                         />
                         <TextInput
                             placeholder="Ваше имя"
                             value={name}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
+                            className={cls.textInput}
                         />
                         <RangeInput
                             className={cls.rangeInput}

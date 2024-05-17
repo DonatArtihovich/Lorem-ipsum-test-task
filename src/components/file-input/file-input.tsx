@@ -7,8 +7,8 @@ type FileInputProps = {
 }
 export const FileInput = forwardRef(({ className }: FileInputProps, ref) => {
     return (
-        <div className={cls.wrapper}>
-            <label htmlFor="file-input" className={classNames(cls.label, className)}>
+        <div className={classNames(cls.wrapper, className)}>
+            <label htmlFor="file-input" className={cls.label}>
                 <img className={cls.inputImage} src="/images/file.svg" alt="file picture" />
                 <p className={cls.inputText}>прикрепить файл</p>
             </label>

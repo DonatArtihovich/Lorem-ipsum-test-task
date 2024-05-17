@@ -111,3 +111,34 @@
         -o-transform: translateX(-212px);
     }
 }
+
+@media(max-width: 830px) {
+    .arrowButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .feedbackCard {
+        width: 23vw;
+    }
+
+    .feedbacksListWrapper {
+        width: calc(23vw * 3 + 40px);
+    }
+}
+
+@media (max-width: 670px) {
+    .feedbackCard {
+        width: 230px;
+    }
+}
+
+@media (max-width: 550px) {
+    .feedbackCard {
+        width: 200px;
+    }
+
+    .feedbacksListWrapper {
+        width: 60vw;
+    }
+}

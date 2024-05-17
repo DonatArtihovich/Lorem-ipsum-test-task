@@ -6,11 +6,8 @@ export function Header() {
         <header className={cls.Header}>
             <div className={cls.wrapper}>
                 <div className={cls.logo}>
-                    <div className={cls.logoMainWrapper}>
-                        <span>LOREMIPSUM.</span>
-                        <span>NE</span>
-                    </div>
-                    <span>T</span>
+                    <span>LOREMIPSUM.</span>
+                    <span>NET</span>
                 </div>
 
                 <nav className={cls.headerNav}>

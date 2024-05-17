@@ -45,3 +45,41 @@
     color: #c3c3c3;
     align-items: center;
 }
+
+@media(max-width: 1200px) {
+    .wrapper {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .footer {
+        height: 160px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 450px) {
+
+    .footer {
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .contactsWrapper {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .walletsWrapper {
+        gap: 3vw;
+        align-items: center;
+    }
+}

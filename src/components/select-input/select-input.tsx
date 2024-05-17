@@ -1,16 +1,18 @@
 import { ChangeEvent } from 'react'
 import cls from './select-input.module.scss'
+import classNames from '@utils/lib/class-name';
 
 type SelectInputProps = {
     value: string;
     setValue: (s: string) => void;
+    className?: string;
 }
-export function SelectInput({ value, setValue }: SelectInputProps) {
+export function SelectInput({ value, setValue, className }: SelectInputProps) {
     return (
         <div className={cls.selecteWrapper}>
             <select
                 value={value}
-                className={cls.select}
+                className={classNames(cls.select, className)}
                 onChange={(e: ChangeEvent<HTMLSelectElement>) => setValue(e.target.value)}
             >
                 <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>

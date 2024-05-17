@@ -81,3 +81,61 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media(max-width: 1200px) {
+    .iconsImage {
+        width: 80vw;
+    }
+
+    .inputsWrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .textInput,
+    .selectInput {
+        width: 25vw;
+        height: 35px;
+    }
+
+    .textInput {
+        padding-left: 12px;
+        box-sizing: border-box;
+    }
+
+    .fileInput {
+        width: 25vw;
+
+        p {
+            font-size: 14px;
+        }
+
+        label {
+            width: 25vw;
+        }
+    }
+}
+
+@media(max-width: 670px) {
+
+    .textInput,
+    .selectInput,
+    .fileInput,
+    .fileInput label {
+        width: 60vw;
+    }
+
+    .fileInput p {
+        font-size: 12px;
+    }
+
+    .inputsWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sendButton {
+        width: 55vw;
+    }
+}
