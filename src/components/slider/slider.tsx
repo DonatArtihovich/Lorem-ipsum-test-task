@@ -8,24 +8,28 @@ type Feedback = {
 }
 
 const feedbacks: Feedback[] = [{
-    author: "Mariya1",
-    feedback: "All is Good"
+    author: "Мария",
+    feedback: "Отличный продукт, я очень доволен покупкой."
 },
 {
-    author: "Mariya2",
-    feedback: "All is Good"
+    author: "Иван",
+    feedback: "Мне очень понравилось качество обслуживания, всем рекомендую."
 },
 {
-    author: "Mariya3",
-    feedback: "All is Good"
+    author: "Анастасия",
+    feedback: "Я пользуюсь этим продуктом уже несколько месяцев и очень довольна результатами."
 },
 {
-    author: "Mariya4",
-    feedback: "All is Good"
+    author: "Сергей",
+    feedback: "Отличное соотношение цены и качества, я очень доволен своей покупкой."
 },
 {
-    author: "Mariya5",
-    feedback: "All is Good"
+    author: "Ольга",
+    feedback: "Я очень довольна обслуживанием и качеством продукта, всем рекомендую."
+},
+{
+    author: 'Петр',
+    feedback: 'Я очень доволен качеством обслуживания и продукта, всем рекомендую.'
 }]
 
 export function Slider() {
