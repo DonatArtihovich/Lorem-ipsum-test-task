@@ -2,11 +2,21 @@ import classNames from '@utils/lib/class-name'
 import cls from './header.module.scss'
 import { Burger } from '@components/burger'
 import useResize from '@utils/hooks/use-resize'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function Header() {
     const width = useResize();
     const [isMenuOpened, setIsMenuOpened] = useState<boolean>(width > 760);
+
+    useEffect(() => {
+        if (isMenuOpened) {
+            document.body.style.overflow = 'hidden';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        }
+    }, [isMenuOpened])
 
     return (
         <header className={cls.Header}>
